@@ -62,6 +62,15 @@ understanding of what capabilities are and how to use them effectively.  Read
 [Capability Myths Demolished](http://zesty.ca/capmyths/usenix.pdf).  (No really, read it;
 it's awesome.)
 
+### Is the message format stable?
+
+Yes. Even though the library has a 0.x version number, many software products depend on Cap'n
+Proto messages to be readable by future versions of the Cap'n Proto library.
+
+In the case of some surprise, show-stopper bug in an obscure part of Cap'n Proto, we do reserve
+the right to break backwards compatibility. We hope never to use this, but mention it here for
+completeness.
+
 ## Usage
 
 ### How do I make a field "required", like in Protocol Buffers?
